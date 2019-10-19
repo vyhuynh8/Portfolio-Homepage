@@ -39,6 +39,14 @@ class Carousel extends React.Component {
                     link: '',
                     selected: false
                 },
+                                {
+                    id: 3,
+                    title: 'Discord Chat Bot',
+                    subTitle: 'A bot to talk to on discord',
+                    imgSrc: discord,
+                    link: '',
+                    selected: false
+                }
             ]
 		}
 	}

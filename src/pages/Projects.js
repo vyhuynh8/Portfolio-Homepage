@@ -3,12 +3,13 @@ import Jumbo from '../components/Jumbo';
 import Carousel from '../components/Carousel';
 
 
-function Home(props) {
+function Projects(props) {
 	return(
 		<div>
-			<Jumbo title={props.title} subTitle={props.subTitle} text={props.text}/>
+			<p class=" pt-5 display-4 text-center font-weight-bold">projects.</p>
+			<Carousel/>
 		</div>
 	);
 }
 
-export default Home;
+export default Projects;
