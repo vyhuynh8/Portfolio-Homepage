@@ -7,6 +7,11 @@ import NavBar from 'react-bootstrap/NavBar';
 import NavBarBrand from 'react-bootstrap/NavBarBrand';
 import Nav from 'react-bootstrap/Nav';
 
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import About from './pages/About'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +20,7 @@ class App extends React.Component {
       headerLinks: [
         {title: "Home", path: "/"},
         {title: "About", path: "/about"},
-        {title: "Contact", path: "/home"}
+        {title: "Contact", path: "/contact"}
       ],
       home: {
         title: "Vy Huynh",
@@ -42,12 +47,17 @@ class App extends React.Component {
             <NavBar.Collapse id="navbar-toggle">
             <Nav className="ml-auto">
               <Link className="nav-link" to="/">Home</Link>
-              <Link className="nav-link" to="/">About</Link>
-              <Link className="nav-link" to="/">Contact</Link>
+              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </Nav>
             </NavBar.Collapse>
           </NavBar>
 
+
+          <Route path="/" exact render={() => <Home title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text}/>}/>
+          <Route path="/about" exact render={() => <About title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text}/>}/>
+          <Route path="/contact" exact render={() => <Contact title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text}/>}/>
+          <Footer/>
         </Container>
       </Router>
     );
