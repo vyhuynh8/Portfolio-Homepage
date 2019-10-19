@@ -1,12 +1,11 @@
-  import React from 'react';
-
-// import Hero from '../components/Hero';
+import React from 'react';
+import Jumbo from '../components/Jumbo';
 // import Carousel from '../components/Carousel';
 
 
-function Home() {
+function Home(props) {
 	return(
-		<p>Home!</p>
+		<Jumbo title={props.title} subTitle={props.subTitle} text={props.text}/>
 	);
 }
 
