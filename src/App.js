@@ -63,7 +63,7 @@ class App extends React.Component {
           <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
           <Route path="/about" exact render={() => <About title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
           <Route path="/projects" exact render={() => <Projects title={this.state.projects.title} subTitle={this.state.projects.subTitle} text={this.state.projects.text}/>}/>
-          <Route path="/contact" exact render={() => <Contact title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
+          <Route path="/contact" exact render={() => <Contact title={this.state.contact.title} subTitle={this.state.contact.subTitle} text={this.state.contact.text}/>}/>
           <Footer/>
         </Container>
       </Router>

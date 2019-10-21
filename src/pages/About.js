@@ -14,8 +14,8 @@ function About(props) {
 				<h2 class="about-title"><img class="about-img" src={quick}></img>quick facts.</h2>
 				<p class="about-description" >Vy Huynh</p>
 				<p class="about-description"><span class="about-description-title">primary languages: </span>Java, Python, Javascript</p>
-				<p class="about-description"><span class="about-description-title">main tools:</span> AWS, React/React Native, Docker, Firebase Databases, Elastic Search</p>
-				<p class="about-description"><span class="about-description-title">interests: </span> Full Stack Development, Software Automation, Bot Development, IoT, Data Science</p>
+				<p class="about-description"><span class="about-description-title">main tools:</span> React/React Native, Docker, Firebase + AWS + Elastic Search Databases</p>
+				<p class="about-description"><span class="about-description-title">interests: </span> Full Stack Development, Software Automation, Bot Development, IoT, Data Science, APIs</p>
 				<p class="about-description"><span class="about-description-title">education: </span> Georgia Tech -- BS Computer Science Spring 2019</p>
 				<h2 class="about-title"><img class="about-img" src={desc}></img>description.</h2>
 				<p>My name is Vy Huynh. I recently graduated from Georgia Tech with a degree in Computer Science. I'm looking for my next opportunity - a job that challenges me, allows me to develop my engineering skills, and one that I thoroughly enjoy. </p>
